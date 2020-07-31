@@ -1,0 +1,111 @@
+/*Paleta de colores*/
+:root {
+    --negro: #000000;
+    --grisOscuro: #3e3636;
+    --rojo: #d72323;
+    --grisClaro: #f5eded;
+    --verdeAgua: #32e0c4;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    background-image: url(../img/MEMEassHome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "conten conten conten"
+                         "footer footer footer";
+}
+
+/*Header*/
+.container .header {
+    grid-area: header;
+    height: 50%;
+
+    display: flex;
+}
+
+.header .logo {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 21px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.header .logo img {
+    align-self: flex-start;
+    width: 100px;
+    height: 100px;
+}
+
+.header .nav {
+    width: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav .navItems {
+    /*background-color: aqua;
+    border: 1px solid #000;*/
+    width: 100%;
+    text-align: center;
+}
+
+.header .nav .navItems a {
+    text-decoration: none;
+    color: #000;
+    font-size: 21px;
+}
+
+.header .nav .navItems a:hover {
+    color: white;
+    background-color: #000;
+    border-radius: 21px;
+    padding: 8px;
+}
+
+
+/*Contain*/
+.container .conten {
+    grid-area: conten;
+    
+}
+
+/*Footer*/
+.container .footer {
+    grid-area: footer;
+    align-self: end;
+    
+    height: 34%;
+    background: #000;
+
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer a {
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+}

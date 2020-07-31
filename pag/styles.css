@@ -1,0 +1,143 @@
+/*Paleta de colores*/
+:root {
+    --negro: #000000;
+    --grisOscuro: #3e3636;
+    --rojo: #d72323;
+    --grisClaro: #f5eded;
+    --verdeAgua: #32e0c4;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    background: #000;
+    color: #000;
+}
+
+.container {
+    background: #fff;
+    width: 90%;
+    max-width: 1000px;
+    margin: 21px auto;
+
+    display: grid;
+    grid-gap: 13px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, auto);
+
+    grid-template-areas: "header header header"
+                         "meme meme meme"
+                         "noticias noticias noticias"
+                         "memes memes memes"
+                         "entre entre entre"
+                         "videos videos videos"
+                         "curio curio curio"
+                         "footer footer footer";
+                         
+}
+
+/*Header*/
+
+.container .header {
+    grid-area: header;
+}
+
+/*Logo*/
+.cotainer .header .logo{
+    display: flex;
+
+    justify-content: center; 
+}
+
+/*metadatos*/
+.container .header .meta {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.container .header .meta h3 {
+    font-size: 13px;
+    color: var(--grisOscuro)
+}
+
+.container .header .meta a img {
+    width: 35px;
+    height: 35px;
+}
+
+.container .header .meta h4 {
+    font-size: 13px;
+    color: var(--grisOscuro) 
+}
+
+/*Navegacion*/
+.container .header .navegacion {
+    width: auto;
+    height: 2em;
+    background: var(--negro);
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .header .navegacion a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--negro);
+    color: white;
+
+    flex-shrink: 1;
+}
+
+.container .header .navegacion a:hover {
+    background: var(--verdeAgua);
+    color: #000;
+}
+/*Header*/
+
+/*meme del día*/
+.container .meme {
+    grid-area: meme;
+
+    text-align: center;
+}
+
+.container .meme h2 {
+    font-size: 55px;
+}
+
+.container .meme img {
+    width: auto;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+/*meme del día*/
+.container .noticias {
+    grid-area: noticias;
+}
+
+.container .memes {
+    grid-area: memes;
+}
+
+.container .entre {
+    grid-area: entre;
+}
+
+.container .videos {
+    grid-area: videos;
+}
+
+.container .curio {
+    grid-area: curio;
+}
+
+.container .footer {
+    grid-area: footer;
+}
