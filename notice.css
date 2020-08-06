@@ -1,0 +1,376 @@
+/*Paleta de colores*/
+:root {
+    --negro: #000000;
+    --grisOscuro: #3e3636;
+    --rojo: #d72323;
+    --grisClaro: #f5eded;
+    --verdeAgua: #32e0c4;
+}
+
+body {
+    background-color: var(--negro);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+.container {
+    width: 90%;
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    background-color: #fff;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 25%;
+    padding: 21px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav {
+    width: 75%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .navItems {
+    width: 100%;
+    /*border: 1px solid var(--negro);
+    background-color: var(--verdeAgua);*/
+
+    text-align: center;
+}
+
+.navItems a {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 21px;
+    padding: 8px;
+}
+
+.navItems a:hover {
+    background-color: var(--negro);
+    border-radius: 21px;
+    color: white;
+}
+
+/*NOTICE SECTION*/
+.notice {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 21px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(autofit, 1fr);
+    grid-gap: 5px;
+}
+
+
+.noticias {
+    /*background-color: aqua;*/
+    border: 1px solid var(--negro);
+    border-radius: 21px;
+}
+
+.noticia1 {
+    grid-column: 1 / span 3;
+    padding: 21px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.noticia1 .principalImg {
+    width: 50%;
+    /*border: 1px solid var(--negro);*/
+    padding-right: 8px;
+}
+
+.principalImg a img {
+    width: 100%;
+    border-radius: 21px;
+}
+
+.noticia1 .metaNotice {
+    width: 50%;
+    /*border: 1px solid var(--negro);*/
+    padding-left: 8px;
+    align-self: center;
+}
+
+.metaNotice a {
+    text-decoration: none;
+    color: var(--negro);
+}
+.metaNotice h3 {
+    font-size: 35px;
+}
+
+.metaNotice h3:hover {
+    text-decoration: underline;
+}
+
+.metaNotice p {
+    font-size: 21px;
+}
+
+.metaNotice .btn {
+    border: 1px solid var(--negro);
+    background-color: var(--negro);
+    color: white;
+    font-size: 21px;
+    border-radius: 21px;
+    padding: 5px;
+}
+
+/*Noticia dos*/
+.noticia2 {
+    text-align: center;
+    padding: 8px;
+
+}
+
+.noticia2 a img {
+    border-radius: 21px;
+}
+
+.noticia2 a h3 {
+    /*background-color: antiquewhite;
+    border: 1px solid var(--negro);*/
+    font-size: 27px;
+}
+
+.noticia2 p {
+    font-size: 21px;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+}
+
+.noticia2 .btnSec {
+    font-size: 21px;
+    background-color: var(--negro);
+    border-radius: 21px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/*Noticia 3*/
+.noticia3 {
+    text-align: center;
+    padding: 8px;
+
+}
+
+.noticia3 a img {
+    border-radius: 21px;
+}
+
+.noticia3 a h3 {
+    /*background-color: antiquewhite;
+    border: 1px solid var(--negro);*/
+    font-size: 27px;
+}
+
+.noticia3 p {
+    font-size: 21px;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+}
+
+.noticia3 .btnSec {
+    font-size: 21px;
+    background-color: var(--negro);
+    border-radius: 21px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/*Noticia 4*/
+.noticia4 {
+    text-align: center;
+    padding: 8px;
+
+}
+
+.noticia4 a img {
+    border-radius: 21px;
+}
+
+.noticia4 a h3 {
+    /*background-color: antiquewhite;
+    border: 1px solid var(--negro);*/
+    font-size: 27px;
+}
+
+.noticia4 p {
+    font-size: 21px;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+}
+
+.noticia4 .btnSec {
+    font-size: 21px;
+    background-color: var(--negro);
+    border-radius: 21px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/*Noticia 5*/
+.noticia5 {
+    text-align: center;
+    padding: 8px;
+
+}
+
+.noticia5 a img {
+    border-radius: 21px;
+}
+
+.noticia5 a h3 {
+    /*background-color: antiquewhite;
+    border: 1px solid var(--negro);*/
+    font-size: 27px;
+}
+
+.noticia5 p {
+    font-size: 21px;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+}
+
+.noticia5 .btnSec {
+    font-size: 21px;
+    background-color: var(--negro);
+    border-radius: 21px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/*Noticia 6*/
+.noticia6 {
+    text-align: center;
+    padding: 8px;
+
+}
+
+.noticia6 a img {
+    border-radius: 21px;
+}
+
+.noticia6 a h3 {
+    /*background-color: antiquewhite;
+    border: 1px solid var(--negro);*/
+    font-size: 27px;
+}
+
+.noticia6 p {
+    font-size: 21px;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+}
+
+.noticia6 .btnSec {
+    font-size: 21px;
+    background-color: var(--negro);
+    border-radius: 21px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/*Noticia 7*/
+.noticia7 {
+    text-align: center;
+    padding: 8px;
+
+}
+
+.noticia7 a img {
+    border-radius: 21px;
+}
+
+.noticia7 a h3 {
+    /*background-color: antiquewhite;
+    border: 1px solid var(--negro);*/
+    font-size: 27px;
+}
+
+.noticia7 p {
+    font-size: 21px;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+}
+
+.noticia7 .btnSec {
+    font-size: 21px;
+    background-color: var(--negro);
+    border-radius: 21px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/*footer*/
+.footer {
+    display: inline-flex;
+    background: var(--negro);
+    width: 100%;
+    box-sizing: border-box;
+    height: 27px;
+}
+
+.footer__memeass {
+    width: 35%;
+    text-decoration: none;
+    
+    display: inline-flex;
+}
+
+.footer__memeassGroup {
+    font-size: 13px;
+    color: gray;
+    margin: auto 21px;
+}
+
+.footer__us {
+    width: 65%;
+    text-decoration: none;
+    
+
+    display: inline-flex;
+    justify-content: end;
+}
+
+.footer__nosotros, .footer__contacto {
+    color: gray;
+    font-size: 13px;
+    margin: auto 21px;
+}
